@@ -7,19 +7,19 @@ root = Tk()
 root.title("solution")
 
 #Set size of window
-root.geometry("500x500")
+root.geometry("600x700")
+
+button = Button(root, text="Red", background='red')
 
 
 #textbox
-inputtxt = Text(root, height = 10,
-                width = 25)
+inputtxt = Text(root, height = 30,
+                width = 50)
 
-inputtxt.grid(row = 5, column =3)
+button.grid(row=1,collum=2)
+inputtxt.grid(row = 5, column =5,columnspan=3)
 
 
-
-# Start the GUI event loop
-root.mainloop()
 
 # Start the GUI event loop
 root.mainloop()

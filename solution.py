@@ -7,17 +7,22 @@ root = Tk()
 root.title("solution")
 
 #Set size of window
-root.geometry("600x700")
+root.geometry("700x700")
 
-button = Button(root, text="Red", background='red')
+voice = Button(root, text="voice", background='lightGray')
+hightlight = Button(root, text="highlight", background='yellow')
+li = Button(root, text="list", background='lightGray')
+
+
 
 
 #textbox
-inputtxt = Text(root, height = 30,
-                width = 50)
+inputtxt = Text(root, height = 30)
 
-button.grid(row=1,collum=2)
-inputtxt.grid(row = 5, column =5,columnspan=3)
+voice.grid(row=1,column=0, )
+hightlight.grid(row=1,column=1)
+li.grid(row=1,column=2,pady=30)
+inputtxt.grid(row = 5, column =0,columnspan=3,padx=40)
 
 
 

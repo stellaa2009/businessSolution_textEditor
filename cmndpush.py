@@ -9,12 +9,15 @@ root.title("cmndpush")
 #Set size of window
 root.geometry("700x700")
 
+L = Label(root, text="Label" )
+
 def changeTitle():
-	root.L(T.get("1.0", END))
+	Word = T.get("1.0", END)
+	L.config(text=Word)
 	pass
 	
+
 T =Text(root, height=5, width=52)
-L = Label(root, text="Label" )
 B = Button(root, text="change me.", background='lightGray',command= changeTitle)
 
 

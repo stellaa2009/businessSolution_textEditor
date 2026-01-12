@@ -26,6 +26,7 @@ def change3():
 	L3.config(text="updated")
 	pass
 
+
 B1 = Button(root, text="update", background='lightGray',command= change1)
 B2 = Button(root, text="update", background='lightGray',command= change2)
 B3 = Button(root, text="update", background='lightGray',command= change3)

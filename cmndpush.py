@@ -7,24 +7,38 @@ root = Tk()
 root.title("cmndpush")
 
 #Set size of window
-root.geometry("700x700")
+root.geometry("300x300")
 
-L = Label(root, text="Label" )
+L1 = Label(root, text="Label" )
+L2 = Label(root, text="Label" )
+L3 = Label(root, text="Label" )
 
-def changeTitle():
-	Word = T.get("1.0", END)
-	L.config(text=Word)
+
+def change1():
+	L1.config(text="updated")
 	pass
 	
+def change2():
+	L2.config(text="updated")
+	pass
 
-T =Text(root, height=5, width=52)
-B = Button(root, text="change me.", background='lightGray',command= changeTitle)
+def change3():
+	L3.config(text="updated")
+	pass
+
+B1 = Button(root, text="update", background='lightGray',command= change1)
+B2 = Button(root, text="update", background='lightGray',command= change2)
+B3 = Button(root, text="update", background='lightGray',command= change3)
 
 
 
-B.grid(row=1,column=1,)
-T.grid(row=1,column=2)
-L.grid(row=1,column=3)
+
+B1.grid(row=1,column=1,)
+L1.grid(row=1,column=2)
+B2.grid(row=2,column=1)
+L2.grid(row=2,column=2)
+B3.grid(row=3,column=1)
+L3.grid(row=3,column=2)
 
 
 

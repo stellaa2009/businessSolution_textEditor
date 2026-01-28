@@ -18,8 +18,11 @@ def writing():
 def reading():
 	with open("demofile.txt","r") as f:
 		content = f.read()
-		print(content)
+		inputtxt.insert(END,content)
+		pass
+	
 
+    
 
 
 voice = Button(root, text="voice", background='lightGray')
@@ -27,7 +30,6 @@ hightlight = Button(root, text="highlight", background='yellow')
 li = Button(root, text="list", background='lightGray')
 writ = Button(root, text="write file", background='lightGray',command= writing)
 read = Button(root, text="read file", background='lightGray',command=reading)
-
 
 
 #textbox
